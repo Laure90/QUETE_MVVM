@@ -55,23 +55,5 @@ namespace QUETE_MVVM
                 
             }
         }
-
-        private ICommand mAdder;
-        public ICommand AddCommand
-        {
-            get
-            {
-                if (mAdder == null)
-                {
-                    mAdder = new Adder();
-                }
-                return mAdder;
-            }
-            set
-            {
-                mAdder = value;
-            }
-        }
-
     }
 }
